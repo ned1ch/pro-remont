@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет — ООО «pro-remont»</title>
+    <meta name="description" content="Личный кабинет клиента, мастера, менеджера и администратора сервисного центра pro-remont: заявки, статусы ремонта, оплата, отзывы и управление.">
+    <meta name="robots" content="noindex">
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="account">
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+<div id="site-header"></div>
+
+<section class="account-hero">
+    <div class="container">
+        <div class="account-hero__inner">
+            <div>
+                <h1 id="accountTitle">Личный кабинет</h1>
+                <p id="accountSubtitle">Заявки, статусы ремонта и документы</p>
+            </div>
+            <div class="account-hero__user hidden" id="accountUserBlock">
+                <span class="avatar" id="accountAvatar">—</span>
+                <div>
+                    <strong id="accountName">—</strong>
+                    <div class="text-sm" id="accountRole" style="color:#D1D5DB">—</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<main id="main">
+    <div class="container">
+        <div id="accountRoot">
+            <div class="account-layout">
+                <aside class="account-side">
+                    <div class="skeleton mb-1" style="height:14px;width:60%"></div>
+                    <div class="skeleton" style="height:220px"></div>
+                </aside>
+                <div class="account-main">
+                    <div class="stats-grid">
+                        <div class="stat-card"><div class="skeleton" style="height:14px;width:60%"></div><div class="skeleton mt-1" style="height:28px;width:40%"></div></div>
+                        <div class="stat-card"><div class="skeleton" style="height:14px;width:60%"></div><div class="skeleton mt-1" style="height:28px;width:40%"></div></div>
+                        <div class="stat-card"><div class="skeleton" style="height:14px;width:60%"></div><div class="skeleton mt-1" style="height:28px;width:40%"></div></div>
+                    </div>
+                    <div class="panel"><div class="panel__body"><div class="skeleton" style="height:120px"></div></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<div id="site-footer"></div>
+<div id="toast-root" class="toast-root" aria-live="polite"></div>
+<script type="module" src="assets/js/pages/account.js"></script>
+</body>
+</html>

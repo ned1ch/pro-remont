@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы клиентов — ООО «pro-remont»</title>
+    <meta name="description" content="Реальные отзывы клиентов сервисного центра pro-remont о ремонте стиральных машин, холодильников и другой бытовой техники.">
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="reviews">
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+<div id="site-header"></div>
+
+<main id="main">
+    <div class="page-hero">
+        <div class="container">
+            <h1>Отзывы наших клиентов</h1>
+            <p>Реальные оценки качества работы сервисного центра ООО «pro-remont». Оставляйте отзыв после выполнения работ — мы публикуем их после проверки.</p>
+        </div>
+    </div>
+
+    <section class="section section--tight">
+        <div class="container">
+            <div id="ratingSummary">
+                <div class="rating-summary">
+                    <div class="skeleton" style="width:70px;height:48px"></div>
+                    <div style="flex:1"><div class="skeleton mb-1" style="width:160px"></div><div class="skeleton" style="width:220px"></div></div>
+                </div>
+            </div>
+
+            <div class="grid-2">
+                <div id="reviewsList" class="request-list">
+                    <div class="card"><div class="skeleton mb-1" style="width:40%"></div><div class="skeleton" style="height:60px"></div></div>
+                    <div class="card"><div class="skeleton mb-1" style="width:45%"></div><div class="skeleton" style="height:60px"></div></div>
+                </div>
+
+                <div class="card card--static" style="height:fit-content" id="reviewFormCard">
+                    <h3 class="mb-1">Оставить отзыв</h3>
+                    <p class="text-sm text-muted mb-2">Отзыв можно оставить после выполнения и оплаты заявки.</p>
+                    <div id="reviewFormBody">
+                        <div class="skeleton" style="height:120px"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<div id="site-footer"></div>
+<div id="toast-root" class="toast-root" aria-live="polite"></div>
+<script type="module" src="assets/js/pages/reviews.js"></script>
+</body>
+</html>

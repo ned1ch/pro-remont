@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты и вызов мастера — ООО «pro-remont»</title>
+    <meta name="description" content="Вызвать мастера по ремонту бытовой техники в Екатеринбурге: онлайн-заявка, телефон диспетчерской, адрес мастерской и режим работы сервисного центра pro-remont.">
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="contacts">
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+<div id="site-header"></div>
+
+<main id="main">
+    <div class="page-hero">
+        <div class="container">
+            <h1>Контакты и вызов мастера</h1>
+            <p>Оставьте онлайн-заявку или позвоните — диспетчер подберёт свободного инженера в вашем районе. Выезд и диагностика бесплатны при продолжении ремонта.</p>
+            <div class="page-hero__meta">
+                <span>✓ Ответ на заявку — в течение 15 минут</span>
+                <span>✓ Работаем ежедневно 08:00–22:00</span>
+            </div>
+        </div>
+    </div>
+
+    <section class="section section--tight">
+        <div class="container">
+            <div class="grid-2" style="align-items:start">
+                <div style="display:flex;flex-direction:column;gap:20px">
+                    <div class="card card--static">
+                        <h3 class="mb-2">Реквизиты и адрес</h3>
+                        <div class="detail-grid" style="grid-template-columns:1fr">
+                            <div class="detail-item">
+                                <div class="detail-item__label">Организация</div>
+                                <div class="detail-item__value">ООО «pro-remont»</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-item__label">ИНН / КПП</div>
+                                <div class="detail-item__value">6671098452 / 667101001</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-item__label">Адрес мастерской</div>
+                                <div class="detail-item__value">г. Екатеринбург, ул. Малышева, 51, офис 204</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-item__label">Телефон диспетчерской</div>
+                                <div class="detail-item__value"><a href="tel:+78001234567" style="font-weight:800;color:var(--primary)">+7 (800) 123-45-67</a></div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-item__label">Электронная почта</div>
+                                <div class="detail-item__value">info@pro-remont-service.ru</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-item__label">График работы</div>
+                                <div class="detail-item__value">Ежедневно с 08:00 до 22:00, без выходных</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card--static">
+                        <h3 class="mb-2">Как проходит выезд</h3>
+                        <div class="timeline">
+                            <div class="timeline__item">
+                                <div class="timeline__title">1. Принимаем заявку</div>
+                                <div class="timeline__text">Диспетчер уточняет тип техники, неисправность и адрес.</div>
+                            </div>
+                            <div class="timeline__item">
+                                <div class="timeline__title">2. Назначаем мастера</div>
+                                <div class="timeline__text">Подбираем свободного инженера в вашем районе и согласуем время.</div>
+                            </div>
+                            <div class="timeline__item">
+                                <div class="timeline__title">3. Диагностика и смета</div>
+                                <div class="timeline__text">Мастер находит причину и согласует стоимость до начала работ.</div>
+                            </div>
+                            <div class="timeline__item">
+                                <div class="timeline__title">4. Ремонт и гарантия</div>
+                                <div class="timeline__text">Выполняем работы, выдаём акт и гарантийный талон до 24 месяцев.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card--static" style="background:var(--accent-soft);border-color:#BFDBFE">
+                        <div class="flex-center" style="gap:12px;align-items:flex-start">
+                            <div class="service-card__icon" style="background:#fff">💡</div>
+                            <div>
+                                <h3 style="margin-bottom:4px">Срочный ремонт?</h3>
+                                <p class="text-sm">Позвоните по номеру <a href="tel:+78001234567" style="font-weight:700">+7 (800) 123-45-67</a> — диспетчер примет заявку вне очереди и передаст её свободному мастеру.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card--static" id="requestCard">
+                    <div id="formWrap">
+                        <h3 class="mb-1">Заявка на ремонт</h3>
+                        <p class="text-sm text-muted mb-2">Заполните форму — менеджер свяжется с вами для подтверждения времени.</p>
+
+                        <form id="requestForm" novalidate>
+                            <div class="form-error"></div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="customerName">Ваше имя</label>
+                                    <input id="customerName" name="customer_name" type="text" autocomplete="name" required placeholder="Иван Иванов">
+                                    <div class="field-error" data-for="customer_name"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="customerPhone">Телефон</label>
+                                    <input id="customerPhone" name="phone" type="tel" autocomplete="tel" required placeholder="+7 (___) ___-__-__">
+                                    <div class="field-error" data-for="phone"></div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="customerEmail">Email <span class="text-muted">(необязательно)</span></label>
+                                <input id="customerEmail" name="email" type="email" autocomplete="email" placeholder="mail@example.ru">
+                                <div class="field-error" data-for="email"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="customerAddress">Адрес выезда мастера</label>
+                                <input id="customerAddress" name="address" type="text" autocomplete="street-address" required placeholder="г. Екатеринбург, ул. Ленина, 24, кв. 8">
+                                <div class="field-error" data-for="address"></div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="requestCategory">Тип техники</label>
+                                    <select id="requestCategory" name="category_id" required>
+                                        <option value="">Выберите тип техники</option>
+                                    </select>
+                                    <div class="field-error" data-for="category_id"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="brandModel">Модель / бренд</label>
+                                    <input id="brandModel" name="brand_model" type="text" placeholder="Bosch WLG 2426">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="requestService">Услуга из прайса <span class="text-muted">(если знаете)</span></label>
+                                <select id="requestService" name="service_id">
+                                    <option value="">Не выбрано — уточнит менеджер</option>
+                                </select>
+                                <div class="form-hint" id="serviceHint"></div>
+                                <div class="field-error" data-for="service_id"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="requestDescription">Опишите неисправность</label>
+                                <textarea id="requestDescription" name="description" rows="4" required maxlength="4000" placeholder="Например: не греет воду, выдаёт ошибку E04, не сливает воду"></textarea>
+                                <div class="field-error" data-for="description"></div>
+                            </div>
+
+                            <label class="checkbox mb-2">
+                                <input type="checkbox" name="agree" required>
+                                <span>Согласен на обработку персональных данных и выезд мастера по указанному адресу</span>
+                            </label>
+
+                            <button type="submit" class="btn btn-primary btn-block btn-lg">Вызвать мастера</button>
+                            <p class="form-hint" id="draftStatus">Черновик заявки сохраняется автоматически</p>
+                        </form>
+                    </div>
+
+                    <div id="successWrap" class="hidden">
+                        <div class="empty-state" style="padding-top:8px">
+                            <div class="empty-state__icon" style="background:var(--success-soft);color:var(--success)">✓</div>
+                            <h3>Заявка создана</h3>
+                            <p>Номер заявки <strong id="successNumber">—</strong>. Менеджер свяжется с вами в течение 15 минут для подтверждения времени.</p>
+                        </div>
+                        <div class="pay-summary" id="successSummary"></div>
+                        <div class="flex gap-1 mt-2" style="flex-wrap:wrap">
+                            <button type="button" class="btn btn-outline" id="newRequestBtn">Оставить ещё заявку</button>
+                            <button type="button" class="btn btn-primary hidden" id="payNowBtn">Оплатить</button>
+                            <a class="btn btn-primary hidden" id="cabinetBtn" href="account.html">В личный кабинет</a>
+                        </div>
+                        <div class="mt-2 text-sm text-muted" id="guestNote">
+                            Зарегистрируйтесь, чтобы отслеживать статус ремонта и получать уведомления.
+                            <button type="button" class="btn btn-ghost btn-xs" data-auth="register">Создать аккаунт</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<div id="site-footer"></div>
+<div id="toast-root" class="toast-root" aria-live="polite"></div>
+<script type="module" src="assets/js/pages/contacts.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цены на ремонт — ООО «pro-remont»</title>
+    <meta name="description" content="Прайс-лист сервисного центра pro-remont: фиксированные цены на ремонт стиральных машин, холодильников, посудомоечных машин, варочных панелей и кофемашин.">
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="prices">
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+<div id="site-header"></div>
+
+<main id="main">
+    <div class="page-hero">
+        <div class="container">
+            <h1>Прайс-лист на услуги</h1>
+            <p>Фиксированные расценки на работу мастера. Окончательная стоимость согласовывается до начала ремонта после диагностики.</p>
+            <div class="page-hero__meta">
+                <span>✓ Выезд и диагностика — 0 ₽ при ремонте</span>
+                <span>✓ Гарантия до 24 месяцев</span>
+                <span>✓ Оригинальные запчасти</span>
+            </div>
+        </div>
+    </div>
+
+    <section class="section section--tight">
+        <div class="container">
+            <div class="prices-toolbar">
+                <div class="filter-tabs" id="priceTabs"></div>
+                <div class="search-box">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                    <input type="search" id="priceSearch" placeholder="Найти услугу: насос, ТЭН, фреон…" aria-label="Поиск по прайс-листу">
+                </div>
+            </div>
+
+            <div class="flex-between mb-2">
+                <p class="text-sm text-muted" id="priceCount">Загружаем прайс-лист…</p>
+                <p class="text-xs text-muted">Цены указаны за работу без учёта стоимости запчастей</p>
+            </div>
+
+            <div class="table-wrap">
+                <table id="priceTable">
+                    <thead>
+                        <tr>
+                            <th>Наименование услуги</th>
+                            <th>Категория</th>
+                            <th>Гарантия</th>
+                            <th>Стоимость работы</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td colspan="5"><div class="skeleton" style="height:22px"></div></td></tr>
+                        <tr><td colspan="5"><div class="skeleton" style="height:22px"></div></td></tr>
+                        <tr><td colspan="5"><div class="skeleton" style="height:22px"></div></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card card--static mt-3" style="display:flex;gap:18px;align-items:center;flex-wrap:wrap;justify-content:space-between">
+                <div>
+                    <h3 style="margin-bottom:4px">Нужна помощь с выбором?</h3>
+                    <p class="text-sm">Опишите неисправность — менеджер подберёт услугу и назовёт точную стоимость.</p>
+                </div>
+                <a href="contacts.html" class="btn">Оставить заявку</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<div id="site-footer"></div>
+<div id="toast-root" class="toast-root" aria-live="polite"></div>
+<script type="module" src="assets/js/pages/prices.js"></script>
+</body>
+</html>
